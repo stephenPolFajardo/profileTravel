@@ -1,0 +1,19 @@
+.ImageRadius {
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.ProfileHeader {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.ProfileText {
+    font-family: ui-sans-serif;
+    color: aliceblue;
+}

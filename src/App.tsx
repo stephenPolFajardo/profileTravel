@@ -3,6 +3,9 @@ import './App.css'
 import oneImage from './img/image3.jpg'
 import twoImage from './img/image1.jpg'
 import threeImage from './img/image2.jpg'
+import AppHeader from './header/AppHeader'
+import AppFooter from './footer/AppFooter'
+import AppNote from './common/notebook/AppNote'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -26,34 +29,41 @@ function App() {
   }, [show])
   
   return (
-    <div>
-        <div className="slideshow-container">
+    <div className='BlackPreal'>
+      <AppHeader />
+      <div className='bodyContainer'>
+          <div className="slideshow-container">
 
-        <div className={classNames(show === 0 ? "mySlidesShow fade" :"mySlides fade" )}>
-          <div className="numbertext">1 / 3</div>
-          <img src={oneImage} alt=""/>
-          <div className="text">I</div>
+          <div className={classNames(show === 0 ? "mySlidesShow fade" :"mySlides fade" )}>
+            <div className="numbertext">1 / 3</div>
+            <img src={oneImage} alt=""/>
+            <div className="text">I</div>
+          </div>
+
+          <div className={classNames(show === 1 ? "mySlidesShow fade" :"mySlides fade" )}>
+            <div className="numbertext">2 / 3</div>
+            <img src={twoImage} alt="" />
+            <div className="text">Love</div>
+          </div>
+
+          <div className={classNames(show === 2 ? "mySlidesShow fade" :"mySlides fade" )}>
+            <div className="numbertext">3 / 3</div>
+            <img src={threeImage} alt="" />
+            <div className="text">You</div>
+          </div>
+
+          </div>
+
+        <div className='dotContainer'>
+          <span className={classNames(show === 0 ? "active" :"", "dot" )}></span> 
+          <span className={classNames(show === 1 ? "active" :"", "dot" )}></span> 
+          <span className={classNames(show === 2 ? "active" :"", "dot" )}></span> 
         </div>
-
-        <div className={classNames(show === 1 ? "mySlidesShow fade" :"mySlides fade" )}>
-          <div className="numbertext">2 / 3</div>
-          <img src={twoImage} alt="" />
-          <div className="text">Love</div>
-        </div>
-
-        <div className={classNames(show === 2 ? "mySlidesShow fade" :"mySlides fade" )}>
-          <div className="numbertext">3 / 3</div>
-          <img src={threeImage} alt="" />
-          <div className="text">You</div>
-        </div>
-
-        </div>
-
-      {/* <div>
-        <span className="dot"></span> 
-        <span className="dot"></span> 
-        <span className="dot"></span> 
-      </div> */}
+      </div>
+      <br /><br /><br /><br />
+      <AppNote />
+      <br /><br /><br /><br /><br /><br /><br />
+      <AppFooter />
     </div>
   );
 }
