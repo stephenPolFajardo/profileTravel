@@ -55,9 +55,9 @@ function App() {
           </div>
 
         <div className='dotContainer'>
-          <span className={classNames(show === 0 ? "active" :"", "dot" )}></span> 
-          <span className={classNames(show === 1 ? "active" :"", "dot" )}></span> 
-          <span className={classNames(show === 2 ? "active" :"", "dot" )}></span> 
+          <span className={classNames(show === 0 ? "active" :"", "dot" )} tabIndex={0} onClick={() => setCount(0)}></span> 
+          <span className={classNames(show === 1 ? "active" :"", "dot" )} tabIndex={0} onClick={() => setCount(1)}></span> 
+          <span className={classNames(show === 2 ? "active" :"", "dot" )} tabIndex={0} onClick={() => setCount(2)}></span> 
         </div>
       </div>
       <br /><br /><br /><br />
