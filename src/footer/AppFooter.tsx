@@ -6,7 +6,7 @@ const AppFooter = () => {
     return (
         <>
         <div className="AppFooter">
-            <p>ssssssssssss</p>
+            <h1>February 22 2202</h1>
         </div>
         </>
     )
