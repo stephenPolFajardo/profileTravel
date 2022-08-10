@@ -1,7 +1,7 @@
 import React from 'react';
 import './AppNote.css';
-import twoImage from '../../img/image1.jpg'
-import threeImage from '../../img/image2.jpg'
+import fourImage from '../../img/image4.jpg'
+import fiveImage from '../../img/image5.jpg'
 
 
 
@@ -27,7 +27,7 @@ const AppNote = () => {
         <div className="back">
             <div className="outer">
                 <div className="content">
-                    <img src={twoImage} alt='' />
+                    <img src={fourImage} alt='' />
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ const AppNote = () => {
         <div className="front">
             <div className="outer">
                 <div className="content">
-                    <img src={twoImage} alt='' />
+                    <img src={fourImage} alt='' />
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ const AppNote = () => {
             <div className="outer">
                 <div className="content">
                     <div className="helper-class-to-make-bug-visbile">
-                        <img src={threeImage} alt='' />
+                        <img src={fiveImage} alt='' />
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ const AppNote = () => {
         <div className="front">
             <div className="outer">
                 <div className="content">
-                    <img src={threeImage} alt='' />
+                    <img src={fiveImage} alt='' />
                 </div>
             </div>
         </div>
