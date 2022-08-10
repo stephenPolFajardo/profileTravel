@@ -27,7 +27,7 @@ const AppNote = () => {
         <div className="back">
             <div className="outer">
                 <div className="content">
-                    <img src={fourImage} alt='' />
+                    <img src={fourImage} alt=''  height="300px"/>
                 </div>
             </div>
         </div>
@@ -36,7 +36,9 @@ const AppNote = () => {
         <div className="front">
             <div className="outer">
                 <div className="content">
-                    <img src={fourImage} alt='' />
+                    <div className='helper-class-to-make-bug-visbile'>
+                        <img src={fourImage} alt=''  height="300px"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +46,7 @@ const AppNote = () => {
             <div className="outer">
                 <div className="content">
                     <div className="helper-class-to-make-bug-visbile">
-                        <img src={fiveImage} alt='' />
+                        <img src={fiveImage} alt=''  height="300px"/>
                     </div>
                 </div>
             </div>
@@ -54,7 +56,7 @@ const AppNote = () => {
         <div className="front">
             <div className="outer">
                 <div className="content">
-                    <img src={fiveImage} alt='' />
+                    <img src={fiveImage} alt=''  height="300px"/>
                 </div>
             </div>
         </div>
